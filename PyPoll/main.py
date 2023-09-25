@@ -19,7 +19,7 @@ with open(csvpath, 'r') as csvfile:
             total_votes += 1
 
             #This will extract the candidates name from the row.
-            # this will also update each candidates vote count and incrementaly count it
+            #also update each candidates vote count and incrementaly count it
             candidate_name = row[2]
             if candidate_name not in candidates:
                 candidates[candidate_name] = 1
@@ -31,7 +31,7 @@ with open(csvpath, 'r') as csvfile:
         percentage = (votes / total_votes) * 100
         percentages[candidate] = percentage
 
-    # this findes the winner
+    # Findes the winner
     winner = max(candidates, key=candidates.get)
 
     #this prints the election results. incluing total number of votes for each candidate and there percentage 

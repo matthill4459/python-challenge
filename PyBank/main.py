@@ -5,7 +5,7 @@ import csv
 csvpath = os.path.join("Resources", "budget_data.csv")
 
 
-# #Veriables need to be defined
+#Variables that need to be defined
 total_months = 0
 total_profit_loss = 0
 previous_profit_loss = 0
@@ -17,14 +17,14 @@ greatest_decrease_date = ""
 greatest_decrease_amount = 0
 
 
-# #This will read the csv file 
+# This will read the csv file 
 with open(csvpath, 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     header = next(csvreader)  # Skip the header row
 
-    # Iterate through the rows in the CSV file
+    # this will Iterate through the rows in the CSV file
     for row in csvreader:
-        # Extract data from the current row
+        # Extract data from the current row of the csvfile
         date = row[0]
         profit_loss = int(row[1])
 
