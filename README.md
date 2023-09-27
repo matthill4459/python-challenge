@@ -1,7 +1,7 @@
 # python-challenge
 ## summary
 
-The codes for the two seperate parts of this challenge will itterate through each repositries CSV file and pull relative information. 
+The codes for the two seperate parts of this challenge will itterate through each repositries CSV file and pull relavent information. 
 ## PyBank
 The code for PyBank will scan all the information in the budget_data.csv file. This code will show the total amount of month and the total profit made in that time period. This code will also show the average change in profit, and show the greatest increase and decrease in profit along with its corasponding month.
 
